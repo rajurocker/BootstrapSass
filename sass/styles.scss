@@ -1,12 +1,14 @@
+$blue : #173438; // primary
+$gray-600 : #4E7867; //secondary
+$white : #04926D; // body background
+$green: #C1C44D;
 
 
-$blue : #bc6a23;
-$gray-600 : white;
-
-
-
+$btn-line-height-lg : 40px;
 // @import 'bootstrap-4.3.1/scss/bootstrap.scss';
 // Custom.scss
+
+
 // Option B: Include parts of Bootstrap
 
 // Required
@@ -15,20 +17,21 @@ $gray-600 : white;
 @import "bootstrap-4.3.1/scss/mixins";
 
 // Optional
-@import "bootstrap-4.3.1/scss/utilities/";
+@import "bootstrap-4.3.1/scss/utilities";
 @import "bootstrap-4.3.1/scss/reboot";
-@import "bootstrap-4.3.1/scss/type";
-@import "bootstrap-4.3.1/scss/images";
-@import "bootstrap-4.3.1/scss/code";
 @import "bootstrap-4.3.1/scss/grid";
-@import "bootstrap-4.3.1/scss/jumbotron";
 @import "bootstrap-4.3.1/scss/buttons";
+@import "bootstrap-4.3.1/scss/images";
+@import "bootstrap-4.3.1/scss/jumbotron";
+@import "bootstrap-4.3.1/scss/transitions";
+@import "bootstrap-4.3.1/scss/type";
 
 
 
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -40,10 +43,16 @@ body {
 	margin: auto;
 }
 
+.btnRow {
+	width: 50%;
+	margin: auto;
+}
+
 #map {
 	width: 100%;
-	height: 100%;
-	background-color: black;
+	height: 700%;
+	background-color: #173438;
+	margin-top: 100px;
 }
 
 html, body {
